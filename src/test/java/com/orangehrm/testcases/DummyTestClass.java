@@ -11,7 +11,7 @@ public class DummyTestClass extends BaseClass{
 	
 	@Test
 	public void dummyTest() {
-		
+		//Test checkin
 		//ExtentManager.startTest("DummyTest1 Test"); --> This has been implemented in TestListener
 		String actualTitle = getDriver().getTitle();
 		String expectedTitle = "OrangeHRM";
