@@ -182,17 +182,17 @@ public class BaseClass {
 		getDriver().manage().window().maximize();
 
 		// Navigate to URL
-		try {
+		/*try {
 			getDriver().get(prop.getProperty("url"));
 		} catch (Exception e) {
 			System.out.println("Failed to Navigate to the URL: " + e.getMessage());
-		}
+		}*/
 		
-//		if (seleniumGrid) {
-//			getDriver().get(prop.getProperty("url_grid"));
-//		} else {
-//			getDriver().get(prop.getProperty("url"));
-//		}
+		if (seleniumGrid) {
+			getDriver().get(prop.getProperty("url_grid"));
+		} else {
+			getDriver().get(prop.getProperty("url"));
+		}
 	}
 
 	@AfterMethod
